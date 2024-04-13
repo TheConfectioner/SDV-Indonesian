@@ -1,5 +1,31 @@
 # Project Milestone
 Target pertama dari proyek ini adalah memindahkan semua terjemahan dari _content pack_ yang lama ke _content pack_ yang baru, terkhusus di bagian konten yang berbasis teks. Setelah semua konten berbasis teks berhasil dipindahkan dan sisanya selesai diterjemahkan, baru kita mulai memindahkan konten berbasis gambar sekaligus mencari tahu bagaimana metode _formatting_ yang pas untuk content pack penerjemahan seperti ini. Solusinya barangkali bisa kita contek dari terjemahan Bahasa Thailand dan Bahasa Polandia.
+# Uniformity
+Ada beberapa hal yang perlu diseragamkan dan distandarisasi. Panduan pertama adalah sumber baku Bahasa Indonesia yang biasanya diterbitkan oleh Badan Bahasa Kementrian Pendidikan dan Budaya, di antaranya: **EYD** (Ejaan Yang Disempurnakan), **KBBI** (Kamus Besar Bahasa Indonesia), **Tesaurus Bahasa Indonesia**, dan **PASTI** (Padanan Istilah). Untuk kata yang tidak memiliki padanan dalam Bahasa Indonesia, sementara ini tetap kita tulis dalam bahasa aslinya dengan sedikit penyesuaian sintaksis. Ke depannya mungkin bisa kita rumuskan untuk memakai istilah dari Wikipedia, memakai pedoman pembentukan istilah di EYD, atau tetap menuliskannya sebagaimana aslinya.
+## Multiple Choice Case
+Ada beberapa kata yang memiliki sejumlah alternatif
+| Kata/Kalimat Asal | Yang Dipilih | Alternatif |
+|  :--- | :--- | :--- |
+| Stardew Valley | Lembah Stardew | Lembah Stardew Valley, Lembah Bintangembun |
+| Ginger Island | Pulau Ginger | Pulau Jahe |
+| Fern Islands | Kepulauan Fern | Kepulauan Pakis |
+| Gem Sea | Lautan Gem | Lautan Permata |
+| Calico Desert | Gurun Calico | Gurun Belacu |
+| Pelican Town | Desa Pelican | Kota Pelican, Desa Pelikan, Desa Pelican Town, Desa Undan |
+| Mayor | Lurah | Walikota, Kades, Kepala Desa  |
+| Adventurer's Guild | Serikat Petualang | Pandu Petualang |
+| community Center | Balai Desa | Pusat Komunitas |
+| Trinket | Pernak-pernik | Perhiasan |
+| Anvil | Paron | Landasan |
+| Void | Hampa | Void, Nihil, Kekosongan |
+| Cask | Tempayan Kayu | Tong Cask |
+| Keg | Tong Fermentasi | Tong Keg |
+| Preserves Jar | Tong Pemeraman | Tong Pengawet |
+| Farm | Pertanian/Ladang | Perkebunan, Peternakan |
+| Parrot | Burung Nuri | Burung Betet, Burung Bayan, Burung Beo |
+## Default Names
+Sejumlah nama-nama bawaan juga rencananya akan diterjemahkan, seperti yang ada dalam berkas dari bahasa lain. Contohnya nama bawaan kuda 'Grover' bisa diganti menjadi 'Turangga'. Sumber penamaan bisa kita cari dari nama-nama yang sekiranya lumrah dijumpai di keseharian masyarakat Indonesia.
+Adapun untuk nama lokasi geografis, sementara ini kita gunakan nama bawaan asli dari Stardew Valley seperti Lembah Stardew, Desa Pelican, Gurun Calico, dan Pulau Ginger.
 # Folder Structure
 Adapun konten-konten tersebut adalah sebagaimana berikut:
 ## Text Based Contents
