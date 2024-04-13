@@ -1,0 +1,114 @@
+{
+    "Format": "2.0.0",
+    "Changes": [
+        // define language
+        {
+            "Action": "EditData",
+            "Target": "Data/AdditionalLanguages",
+            "Entries": {
+                "{{ModId}}": { // for technical reasons, you need to specify the ID here *and* in the "ID" field
+                    "ID": "{{ModId}}",
+                    "LanguageCode": "id",
+                    "ButtonTexture": "TombolBahasa",
+                    "UseLatinFont": true,
+                    "TimeFormat": "[HOURS_24_00]:[MINUTES]",
+                    "ClockTimeFormat": "[HOURS_24_00]:[MINUTES]",
+                    "ClockDateFormat": "[DAY_OF_WEEK] [DAY_OF_MONTH]",
+                    "NumberComma": "."
+                }
+            }
+        },
+
+        // load button texture
+        {
+            "LogName": "Menambahkan TombolBahasa",
+            "Action": "Load",
+            "Target": "TombolBahasa",
+            "FromFile": "assets/TombolBahasa.png"
+        },
+
+        // load dialogues
+        {
+            "LogName": "Memuat dialog para karakter",
+            "Action": "Load",
+            "Target": "Characters/Dialogue/Abigail, Characters/Dialogue/Alex, Characters/Dialogue/Caroline, Characters/Dialogue/Clint, Characters/Dialogue/Demetrius, Characters/Dialogue/Dwarf, Characters/Dialogue/Elliott, Characters/Dialogue/Emily, Characters/Dialogue/Evelyn, Characters/Dialogue/George, Characters/Dialogue/Gil, Characters/Dialogue/Gus, Characters/Dialogue/Haley, Characters/Dialogue/Harvey, Characters/Dialogue/Jas, Characters/Dialogue/Jodi, Characters/Dialogue/Kent, Characters/Dialogue/Krobus, Characters/Dialogue/Leah, Characters/Dialogue/Leo, Characters/Dialogue/LeoMainland, Characters/Dialogue/Lewis, Characters/Dialogue/Linus, Characters/Dialogue/Marnie, Characters/Dialogue/MarriageDialogue, Characters/Dialogue/MarriageDialogueAbigail, Characters/Dialogue/MarriageDialogueAlex, Characters/Dialogue/MarriageDialogueElliott, Characters/Dialogue/MarriageDialogueEmily, Characters/Dialogue/MarriageDialogueHaley, Characters/Dialogue/MarriageDialogueHarvey, Characters/Dialogue/MarriageDialogueKrobus, Characters/Dialogue/MarriageDialogueLeah, Characters/Dialogue/MarriageDialogueMaru, Characters/Dialogue/MarriageDialoguePenny, Characters/Dialogue/MarriageDialogueSam, Characters/Dialogue/MarriageDialogueSebastian, Characters/Dialogue/MarriageDialogueShane, Characters/Dialogue/Maru, Characters/Dialogue/Mister Qi, Characters/Dialogue/Pam, Characters/Dialogue/Penny, Characters/Dialogue/Pierre, Characters/Dialogue/rainy, Characters/Dialogue/Robin, Characters/Dialogue/Sam, Characters/Dialogue/Sandy, Characters/Dialogue/Sebastian, Characters/Dialogue/Shane, Characters/Dialogue/Vincent, Characters/Dialogue/Willy, Characters/Dialogue/Wizard",
+            "FromFile": "assets/Content/{{Target}}.json",
+            "Priority": "High",
+            "When": {
+                "Language": "id"
+            }
+        },
+
+         // load data
+        {
+            "LogName": "Memuat berbagai macam data",
+            "Action": "Load",
+            "Target": "Data/Achievements, Data/Boots, Data/Bundles, Data/EngagementDialogue, Data/ExtraDialogue, Data/hats, Data/mail, Data/Monsters, Data/NPCGiftTastes, Data/Quests, Data/SecretNotes",
+            "FromFile": "assets/Content/{{Target}}.json",
+            "Priority": "High",
+            "When": {
+                "Language": "id"
+            }
+        },
+
+        // load events
+        {
+            "LogName": "Memuat data peristiwa",
+            "Action": "Load",
+            "Target": "Data/Events/AbandonedJojaMart, Data/Events/AnimalShop, Data/Events/ArchaeologyHouse, Data/Events/Backwoods, Data/Events/BathHouse_Pool, Data/Events/Beach, Data/Events/BoatTunnel, Data/Events/BusStop, Data/Events/CommunityCenter, Data/Events/ElliottHouse, Data/Events/Farm, Data/Events/FarmHouse, Data/Events/FishShop, Data/Events/Forest, Data/Events/HaleyHouse, Data/Events/HarveyRoom, Data/Events/Hospital, Data/Events/IslandHut, Data/Events/IslandNorth, Data/Events/IslandSouth, Data/Events/IslandWest, Data/Events/JoshHouse, Data/Events/LeahHouse, Data/Events/ManorHouse, Data/Events/Mine, Data/Events/Mountain, Data/Events/QiNutRoom, Data/Events/Railroad, Data/Events/Saloon, Data/Events/SamHouse, Data/Events/SandyHouse, Data/Events/ScienceHouse, Data/Events/SebastianRoom, Data/Events/SeedShop, Data/Events/Sewer, Data/Events/Sunroom, Data/Events/Temp, Data/Events/Town, Data/Events/Trailer, Data/Events/Trailer_big, Data/Events/WizardHouse, Data/Events/Woods",
+            "FromFile": "assets/Content/{{Target}}.json",
+            "Priority": "High",
+            "When": {
+                "Language": "id"
+            }
+        },
+
+        // load festivals
+        {
+            "LogName": "Memuat data festival",
+            "Action": "Load",
+            "Target": "Data/Festivals/fall16, Data/Festivals/fall27, Data/Festivals/FestivalDates, Data/Festivals/spring13, Data/Festivals/spring24, Data/Festivals/summer11, Data/Festivals/summer28, Data/Festivals/winter8, Data/Festivals/winter25",
+            "FromFile": "assets/Content/{{Target}}.json",
+            "Priority": "High",
+            "When": {
+                "Language": "id"
+            }
+        },
+
+        // load TV
+        {
+            "LogName": "Memuat data televisi",
+            "Action": "Load",
+            "Target": "Data/TV/CookingChannel, Data/TV/TipChannel",
+            "FromFile": "assets/Content/{{Target}}.json",
+            "Priority": "High",
+            "When": {
+                "Language": "id"
+            }
+        },
+
+        // load strings
+        {
+            "LogName": "Memuat berbagai macam string",
+            "Action": "Load",
+            "Target": "Strings/1_6_Strings, Strings/animationDescriptions, Strings/BigCraftables, Strings/Buildings, Strings/BundleNames, Strings/Characters, Strings/credits, Strings/EnchantmentNames, Strings/Events, Strings/FarmAnimals, Strings/Lexicon, Strings/Locations, Strings/MovieConcessions, Strings/MovieReactions, Strings/Movies, Strings/Notes, Strings/NPCNames, Strings/Objects, Strings/Pants, Strings/Quests, Strings/Shirts, Strings/SimpleNonVillagerDialogues, Strings/SpecialOrderStrings, Strings/SpeechBubbles, Strings/StringsFromCSFiles, Strings/StringsFromMaps, Strings/UI, Strings/Weapons, Strings/WorldMap",
+            "FromFile": "assets/Content/{{Target}}.json",
+            "Priority": "High",
+            "When": {
+                "Language": "id"
+            }
+        },
+
+        // load schedules
+        {
+            "LogName": "Memuat percakapan terjadwal dari karakter",
+            "Action": "Load",
+            "Target": "Strings/schedules/Abigail, Strings/schedules/Alex, Strings/schedules/Caroline, Strings/schedules/Clint, Strings/schedules/Demetrius, Strings/schedules/Elliott, Strings/schedules/Emily, Strings/schedules/Evelyn, Strings/schedules/George, Strings/schedules/Gus, Strings/schedules/Haley, Strings/schedules/Harvey, Strings/schedules/Jas, Strings/schedules/Jodi, Strings/schedules/Leah, Strings/schedules/Leo, Strings/schedules/Lewis, Strings/schedules/Linus, Strings/schedules/Marnie, Strings/schedules/Maru, Strings/schedules/Pam, Strings/schedules/Penny, Strings/schedules/Pierre, Strings/schedules/Robin, Strings/schedules/Sam, Strings/schedules/Sandy, Strings/schedules/Sebastian, Strings/schedules/Shane, Strings/schedules/Vincent, Strings/schedules/Willy",
+            "FromFile": "assets/Content/{{Target}}.json",
+            "Priority": "High",
+            "When": {
+                "Language": "id"
+            }
+        }
+    ]
+}

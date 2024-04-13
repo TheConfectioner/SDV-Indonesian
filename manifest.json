@@ -1,0 +1,11 @@
+{
+    "Name": "Indonesian Language",
+    "Author": "TheConfectioner",
+    "Version": "0.1.0-alpha",
+    "Description": "Translating Stardew Valley 1.6 contents into Indonesian.",
+    "UniqueID": "TheConfectioner.IndonesianLanguage",
+    "UpdateKeys": [],
+    "ContentPackFor": {
+        "UniqueID": "Pathoschild.ContentPatcher"
+    }
+}
